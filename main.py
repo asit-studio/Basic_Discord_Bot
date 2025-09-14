@@ -38,9 +38,5 @@ async def on_message(message):
 async def hello(ctx):
     await ctx.send(f"Hello {ctx.author.mention}!")
 
-#@bot.tree.command(name="hello_slash", description="Say hello with a slash command")
-#async def hello_slash(interaction: discord.Interaction):
-    await interaction.response.send_message(f"Hello {interaction.user.mention}!")
-
-
 bot.run(TOKEN, log_handler=handler, log_level=logging.DEBUG)
+
