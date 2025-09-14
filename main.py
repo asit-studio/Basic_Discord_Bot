@@ -28,9 +28,9 @@ async def on_message(message):
     if message.author == bot.user:
         return
     
-    if "fuck you" in message.content.lower():
+    if "shit" in message.content.lower():
         await message.delete()
-        await message.channel.send(f"{message.author.mention} yo want the hell man")
+        await message.channel.send(f"{message.author.mention} Don't use such words!")
 
     await bot.process_commands(message)
 
@@ -41,5 +41,6 @@ async def hello(ctx):
 #@bot.tree.command(name="hello_slash", description="Say hello with a slash command")
 #async def hello_slash(interaction: discord.Interaction):
     await interaction.response.send_message(f"Hello {interaction.user.mention}!")
+
 
 bot.run(TOKEN, log_handler=handler, log_level=logging.DEBUG)
