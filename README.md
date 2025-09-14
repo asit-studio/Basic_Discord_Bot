@@ -2,7 +2,7 @@
 ```
 This is a basic Discord bot made using Python.
 It has only one command for now that is " /hello" , you can add more commands if you want.
-It can warn any user if any abusive word has been used, you can assigh the word in the code by replacing the "abusive_word" with your anyword.
+It can warn any user if any abusive word has been used, you can assigh the word in the code by replacing the "abusive_word" with anyword.
 
 
 
